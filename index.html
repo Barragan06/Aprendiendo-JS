@@ -2,43 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>pagina-jose</title>
-    <link rel="shortcut icon" href="img/pngwing.com.png" type="img">
-    <link rel="stylesheet" href="css/estiloalv.css">
-    <link rel="stylesheet" href="js/">
-<body> 
-    <header>
-        <!--Menu de la pagina-->
-        <nav>
-            <section class="contenedor nav">
-                <div class="logo">
-                    <img src="img/pngwing.com.png" alt="logo">
-                </div>
-                <div class="enlaces_header">
-                    <button>
-                        <a href="html/pagina2.html" class="boton">RUTINAS</a>
-                    </button>
-                    <button>
-                    <a href="html/pagina3.html"class="boton">SUPLEMENTOS</a>
-                    </button>
-                    <button>
-                    <a href="html/soporte.html"class="boton">SOPORTE</a>
-                    </button>
-                </div>
-            </section>
-        </nav>
-        <!--contenido de la pagina-->
-        <div class="contenedor">
-            <section class="Contenido_header">
-                <section class="text_header">
-                    <h1>BIENVENIDO A TU PAGINA FITNNESS</h1>
-                    <p></p>
-                </section>
-                <img id="foto_perfil" src="img/pngwing.com (1).png" alt="imgng">
-            </section>
-        </div>
-    </header> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <h1>Fundamentos de JavaScript</h1>
+    <p>Usar var para declarar una variable no es una practica y quedan global</p>
+    <p>con console.log (); imprimo lo que quiera en la consola</p>
+    <script> 
+    console.log("VAR & LET");
+    console.log("********************VAR**************")
+    // asi queda con var :(
+    var hola = "hola mundo";
+    console.log(hola);
+    let hello = "Hello world"
+    console.log(hello);
+    //Ejemplo de el ambito de bloque {};
+    var musica = "Zayn";
+    console.log(musica);
+{
+    var musica = "Sia";
+    console.log(musica);
+}
+    console.log(musica);
+    /*1. La variable que este dentro de un bloque de llaves puede cambiar su valor y cuando sale 
+     vale lo mismo que el cuando salio del bloque, (pasos logicos y declaracion); */
+     
+     // asi queda con let :)
+    console.log("********************LET**************")
+    let yosoy = "Yo soy";
+    console.log(yosoy);
+    let iam = "i am";
+    console.log(iam);
+    //Ejemplo con let
+    let music = "Zayn"
+    console.log(music);
+    //antes de las llaves
+    {
+        let music = "Sia";
+        console.log(music);
+    }
+    console.log(music);
+    // la variable despues de las llaves vuelve a valer lo qe valia globalmente
+
+    console.log("CONST");
+    //2. CONST para variables que nunca cambian por ejemplo PI
+    const PI = 3.1416;
+    console.log(PI);
+
+    // los objetos llevan llaves con sus atributos estos con su valor, ejemplo
+
+    let objeto = {
+        nombre :"Jose",
+        edad :21
+    }
+    let colores = ["Blanco", "Rojo", "Azul"];
+
+    console.log(objeto);
+    console.log(colores);
+
+    </script>
+
 </body>
+
 </html>
