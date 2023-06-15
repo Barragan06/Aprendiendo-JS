@@ -52,7 +52,7 @@
     console.log(PI);
 
     // los objetos llevan llaves con sus atributos estos con su valor, ejemplo
-
+    console.log ("**************OBJETOS Y ARRAYS (1) LET***************");
     let objeto = {
         nombre :"Jose",
         edad :21
@@ -61,7 +61,59 @@
 
     console.log(objeto);
     console.log(colores);
+     /*asi se le agregan propiedades a los objetos, en pocas palabras es como
+      agregar mas colores y otro elemento al array*/ 
+     
+    objeto.correo = "Barraganjosedavid7@gmail.com";
+     colores.push("Naranja");
 
+     console.log (objeto);
+     console.log(colores);
+
+     console.log ("**************CONST // OBJETOS Y ARRAYS (1) ***************");
+    /*const cambia cuando tenemos datos compuestos como objetos, arrays, funcion, class etc
+    const es constante cuando la variable es primitiva*/
+     const object = {
+        name :"Jose",
+        years :21
+    }
+    const colors = ["Blanco", "Rojo", "Azul"];
+
+    console.log(object);
+    console.log(colors);
+      
+     
+    object.mail = "Barraganjosedavid7@gmail.com";
+     colors.push("Naranja");
+
+     console.log (object);
+     console.log(colors);
+
+     console.log("*********CADENAS DE TEXTO (String)************");
+// Cadenas de texto (strings
+let nombre = "Jose";
+let apellido = "Barragan";
+// Con el new se crea un objeto nuevo de un cierto tipo de dato
+let saludo = new String ("Hola mundo");
+
+let Lorem = "Lorem tiene una casa en la esquina donde vive la vecina de lorem";
+
+
+console.log (
+nombre.length,
+apellido.length,
+saludo.length, // .length es una PROPIEDADES de Java Script
+nombre.toUpperCase(), // las que se invocan con .y terminan en () son METODOS
+apellido.toLowerCase(),
+Lorem.includes("vecina"), //Asi encuntro las palabras que me pidan en cualquier texto ;) true
+Lorem.includes("Jose") // false 
+);
+
+
+
+/* imprime cada letra con un numero por que al crear el obejto string javascript lo tiene acceso idividu
+al a cada termino por eso cuenta las letras y los espacios
+El .length en cada variable es para que cuenta la cantidad de caracteres que hay dentro de las variables*/
     </script>
 
 </body>
