@@ -114,7 +114,48 @@ Lorem.includes("Jose") // false
 /* imprime cada letra con un numero por que al crear el obejto string javascript lo tiene acceso idividu
 al a cada termino por eso cuenta las letras y los espacios
 El .length en cada variable es para que cuenta la cantidad de caracteres que hay dentro de las variables*/
-    </script>
+   
+
+console.log("***********CONCATENACION***********");
+
+let nick = "Jose";
+let lastnick = "Barragan";
+
+let saludo1 = " Mi nombres es " + nick + " " + lastnick;
+
+console.log(saludo1);
+ 
+console.log("********NUMBERS******");
+let a = 2;
+let b = new Number(1);
+let c = 7.19;
+
+console.log(a,b)
+console.log(c.toFixed(1)); // Metodo para decir cuantos numeros decimales tiene un numero
+console.log(c.toFixed(5));
+console.log(parseInt(c)); // Metodo que solo me da el int osea el entero 
+console.log(parseFloat(c)); // Metodo que me de los decimales
+
+console.log("********VARIABLES BOOLEANS********");
+
+let verdadero = true ;
+let falso = false ; 
+let v = Boolean(true) ;
+let f = Boolean(false);
+console.log(verdadero,falso,v,f);
+console.log(typeof verdadero, typeof falso);
+console.log(Boolean(0));
+console.log(Boolean(-7));
+console.log(Boolean(""));
+console.log (Boolean(".")); 
+// Hay valores que tienden a verdaderos y otros a falsos 
+ console.log("**********VARIABLES INDEFINIDAS********")
+ let indefinida;
+ console.log(indefinida);
+ let nulo = null;
+ console.log(nulo);
+ 
+</script>
 
 </body>
 
