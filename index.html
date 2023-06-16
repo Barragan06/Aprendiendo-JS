@@ -10,6 +10,11 @@
     <h1>Fundamentos de JavaScript</h1>
     <p>Usar var para declarar una variable no es una practica y quedan global</p>
     <p>con console.log (); imprimo lo que quiera en la consola</p>
+    <p>Las funciones son un bloque de codigo autocontenido se pueden ejecutar en cualquier momento
+        puede recibir paramateros o no y tambien pueden devolver o no valores
+        Las funciones tambien se consideran objetos
+        Se puede retornar 
+    </p>
     <script> 
     console.log("VAR & LET");
     console.log("********************VAR**************")
@@ -154,7 +159,61 @@ console.log (Boolean("."));
  console.log(indefinida);
  let nulo = null;
  console.log(nulo);
- 
+  
+
+
+ console.log("*******FUNCIONES********");
+ /* Una funcion es un bloque de codigo autocontenido que se puede definir una vez
+ y ejecutar en cualquier momento . Una funcion aceptar parametros y devolver un valor
+
+Las funciones en JavaScript son objetos, un tipo especial de objetos */
+
+
+//FUNCION DECLARADA
+function  estoEsUnaFuncion(){
+console.log("Uno");
+console.log("Dos");
+console.log("Tres");
+}
+
+
+estoEsUnaFuncion(); 
+estoEsUnaFuncion(); 
+estoEsUnaFuncion(); 
+estoEsUnaFuncion(); //Los parentesis indican que una funcion se va a ejecutar
+//Los parentesis indican que una funcion se va a ejecutar
+ //invocacion de FUNCIONES o llamado al jugador de la banca
+
+ function unaFuncionQueDevuelveValores(){
+console.log("Uno");
+// Si aca pongo un return se ignnora el resto de lineas y retorna el string uno y el valor que se da al return 
+console.log("Dos");
+console.log("Tres");
+return "La funcion esta retornando strings";
+}
+let valorDeFuncion = unaFuncionQueDevuelveValores();
+
+
+console.log(valorDeFuncion);
+
+funcionDeClarada();
+
+function funcionDeClarada (){
+    console.log ("Esta es una funcion declarada puede invocarse en cualquier parte de nuestro codigo e incluso antes que la funcion sea declarada ");
+
+}
+
+funcionDeClarada();
+
+console.log("************LOS ARRAY************")
+// SE PUEDEN DECLARAR CON CONST
+ const d = [];
+ const e = [1,true,"HOLA",["A","B","C"]];
+
+ console.log(d);
+ console.log(e);
+
+
 </script>
 
 </body>
