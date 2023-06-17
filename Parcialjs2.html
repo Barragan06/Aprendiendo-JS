@@ -3,29 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumas de inputs</title>
-    <style>
-        body{
-            text-align: center;
-            background-color:darkslategray;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Aun no se que se hace jeje </h1>
-    <input id="Suma">
-    <button id="bton_1" >Enviar</button>
-     <br> <br>
-     <input type="Suma_1">
-    <button id="bton_2">Enviar</button>
+    <input id="input_1" type="text">
+    <input  id="input_2" type="text">
+    <button onclick="mifuncion()" id="bton_1">Enviar</button>
+        <h1 id="comprendidos"></h1>
+        <h1 id="pares"></h1>
+        <h1 id="impares"></h1>
 
-    <script>
-        let Suma = document.;
-        let Suma_1 = document.;
-        let bton_1 = document.;
-        let bton_2 = document.;
-        
-    </script>
+        <script>
 
+
+            let comprendidos = document.getElementById("comprendidos");
+            let pares = document.getElementById("pares");
+            let impares = document.getElementById("impares");
+
+            function mifuncion(){
+                let input_1 = parseInt(document.getElementById("input_1").value);
+                let input_2 = parseInt(document.getElementById("input_2").value);
+                let resta = input_2 - input_1;
+
+                if (input_1 > input_2){
+                    alert ("El input_1 es mayor al input_2");
+                }
+                if (input_1 == input_2) {
+                    alert("Los inputs son iguales");
+                }
+                if (resta > 20 ){
+                    alert("Ingrese un rango valido"); 
+                }
+                let resultado_1 = " ";
+                for (let i = input_1; i<input_2;i++){
+                    resultado_1 += i;
+                }
+                comprendidos.innerText = "Los numeros comprendidos en este rango son " + resultado_1;
+                let resultado_2 = " ";
+
+                 for(let i = input_1;i<input_2;i++){
+                    if(i%2==0){
+                        resultado_2 +=i;
+                    }
+                }
+
+                pares.innerText = "Los pares son " + resultado_2; 
+
+                let resultado_3 = " ";
+                for(let i = input_1;i<input_2;i++){
+                    if(i%2==1){
+                        resultado_3 += i;
+                    }
+                }
+
+                impares.innerText = "Los impares son " + resultado_3;
+    }
+        </script>
 </body>
 </html>
